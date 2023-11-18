@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
 use App\Models\Categories;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

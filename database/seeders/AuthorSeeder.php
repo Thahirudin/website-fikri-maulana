@@ -6,7 +6,10 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
 class AuthorSeeder extends Seeder
 {
     /**

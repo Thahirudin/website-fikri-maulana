@@ -10,6 +10,14 @@ use Illuminate\Support\Facades\Storage;
 
 class ArticlesController extends Controller
 {
+<<<<<<< HEAD
+=======
+    public function index()
+    {
+        $articles = Article::with('category', 'author')->orderBy('created_at', 'desc')->get();
+        return view('article.index', compact('articles'));
+    }
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
     public function create()
     {
         $categories = Categories::all();
@@ -45,6 +53,7 @@ class ArticlesController extends Controller
             return redirect()->back()->withInput()->with('error', 'Error: ' . $e->getMessage());
         }
     }
+<<<<<<< HEAD
     public function index()
     {
         $articles = Article::with('category', 'author')->orderBy('created_at', 'desc')->get();
@@ -56,6 +65,8 @@ class ArticlesController extends Controller
         return view('article.view', compact('article'));
     }
     
+=======
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
     public function edit($id)
     {
         $categories = Categories::all();
@@ -63,7 +74,15 @@ class ArticlesController extends Controller
         $selectedCategoryId = $article->id;
         return view('article.edit', compact('article', 'categories', 'selectedCategoryId'));
     }
+<<<<<<< HEAD
     
+=======
+    public function view($url)
+    {
+        $article = Article::with('category', 'author')->where('url', $url)->first();
+        return view('article.view', compact('article'));
+    }
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
     public function update(Request $request, $id)
     {
         // Validasi formulir

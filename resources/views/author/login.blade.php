@@ -49,6 +49,12 @@
                   </form>
                   <hr>
                   <div class="text-center">
+<<<<<<< HEAD
+=======
+                    <a class="font-weight-bold small" href="register.html">Create an Account!</a>
+                  </div>
+                  <div class="text-center">
+>>>>>>> ea0931fa0307f8c116721773f9710995c5d356b6
                   </div>
                 </div>
               </div>
